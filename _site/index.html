@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -14,12 +14,18 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Scrolling CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-
     <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='css/font-awesome-4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-ico" href="/favicon.ico"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,161 +36,188 @@
 
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Anna Lorimer</a>
-            </div>
+<!--     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav> -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="AnnaLorimerResume.pdf">Resume</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Blog</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/annalorimer">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://ca.linkedin.com/pub/anna-lorimer/a5/139/467">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="mailto:anna.lorimer@uwaterloo.ca">Email</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <!-- <h1>Start Bootstrap</h1> -->
+            <!-- <h3>Free Bootstrap Themes &amp; Templates</h3> -->
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br>
+            <!-- <a href="#about" class="glyphicon-chevron-down"></a> -->
+            <a href="#about" class="arrow">
+               <i class="fa fa-arrow-down fa-2x"></i>
+            </a>
         </div>
+    </header>
+
+    <!-- About -->
+     <section id="about" class="about about-background">
+        <div class="text-vertical-center">
+            
+            <div class="col-sm-4 col-md-4">
+                <h1 class="permanent-marker">Who am I?</h1>
+                <p><br>Hi! I'm Anna.<br> I'm currently a <a href="https://uwaterloo.ca/combinatorics-and-optimization/about">Combinatorics, Optimization </a> &amp; Computer Science at the University of Waterloo. </p>
+                <p>I love working on meaninful projects that have a direct impact on people, especially if I get to learn something new in the process. To me, programming is all about getting your hands dirty and creating the best product possible. </p>
+                <p>I've interned at <a href="http://www.audiobooks.com">Audiobooks.com</a> &amp; <a href="http://www.dejero.com">Dejero Inc.</a>. I am also an active member of the <a href="https://wics.uwaterloo.ca">Women in Computer Science Undergraduate Committee</a> at UWaterloo. <br> I am currently looking for a coop placement for Summer 2016. </p>
+                <h3 class="permanent-marker">Other Interests:</h3>
+                    <p>Cryptography &amp; Computer Security</p>
+                    <p>Baking french patisseries</p>
+                    <p><a href="http://www.parelli.com/about.html">Natural Horsemanship</a></p>
+                    <p><br><br><br><a href="https://youtu.be/nBNejqH8dcE"><strong>Watch my application for Square's College Codecamp!</strong></a> </p>
+                    <p>
+                        <br><br><br>
+                        <a class="arrow" href="mailto:anna.lorimer@uwaterloo.ca?Subject=Hi There!">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </a>
+                        &nbsp;
+                        <a class="arrow" href="../Anna_Lorimer_Resume.pdf">
+                            <i class="fa fa-file-text fa-2x"></i>
+                        </a>
+                        &nbsp;
+                        <a class="arrow" href="https://github.com/annalorimer">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                        &nbsp;
+                        <a class="arrow" href="https://ca.linkedin.com/in/annalorimer">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </p>
+                </div>
+
+            <!-- <h3>Free Bootstrap Themes &amp; Templates</h3> -->
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br>
+            <!-- <a href="#about" class="glyphicon-chevron-down"></a> -->
+        </div>
+    </section>
+   <!--  <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                </div>
+            </div> -->
+            <!-- /.row -->
+        <!-- </div> -->
         <!-- /.container -->
-    </nav>
+    <!-- </section> -->
 
-    <!-- About Section -->
-    <section id="intro" class="intro-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Anna Lorimer</h1>
-                    <div class="" >
-                        <img src="my face.png" class="img-circle" alt="Anna Lorimer">
-                    </div>
-                    <div class="">
-                        <p>Hi! I'm a second year Combinatorics and Optimization Major/Computer Science Minor at the University of Waterloo with a passion for Software Engineering.</p>
-                        <a href="http://math.uwaterloo.ca/combinatorics-and-optimization/about">What is Combinatorics and Optimization?</a>
-                    </div>
-                    <p>Fun Facts:</p>
-                	<p>• I can make macarons<p>
-                	<p>• I have my Level 1 <a href="http://www.parelli.com/about.html">Parelli</a> certification</p>
-                    <p>• My favourite movie is Pacific Rim</p>	
-                    <a class="btn btn-default page-scroll" href="#about">More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->     
-    <section id="about" class="about-section">
-        <div class="container-fluid">             
-            <div class="row">                  
-                <div class="col-lg-12">                     
-                    <h1 class="pad-bottom">How did I get started in Software Engineering?</h1> 
-                    <p>Early on I figured out that if I treated whatever I was doing as an experiment, I got
-                        support at home and left alone enough to test stuff out and try a lot of new
-                        things. This led to some really weird food combinations and strange things that
-                        I made out of paper and whatever else I could find. I pretty much l iked to mess
-                        around with anything I could get my hands on.  This included the top-notch (at
-                        the time) Dell PC my parents bought when I was 9. So like in many families I
-                        became the go-to person for all things to do with the computer, especially since
-                        I was the only kid. One summer I did attend an HTML/CSS coding camp for girls at
-                        the local university and I enjoyed it and working with the other girls, but
-                        there weren’t really other opportunities around then to follow up afterwards. So
-                        I did lots of other things. Writing (in English & French), storyboards, film
-                        making, baking and training horses.  What I really enjoyed about all these
-                        things were the different ways of thinking and problem solving that were
-                        involved with these activities. In the case of the large animals (horses) I had
-                        to give quite a bit of thought to thinking about things from their perspective,
-                        not just my own. I didn’t think of of this as “pre-engineering or CS” but the
-                        components and passion for problem solving were there in these activities.
-                        Teaching a 1500-pound horse to stand on a pedestal like a circus elephant takes
-                        a surprising amount of problem solving and critical thinking skills, not to
-                        mention perseverance. </p>
-
-                        <p>Although my high school had computer science classes, it
-                        was all pretty low key and there were no girls involved, just boys who had known
-                        each other forever. My school was not a techie hub. Math, though, that is my
-                        thing. Thankfully, my love of math didn’t get squashed and I ended up in an
-                        undergraduate math program at the University of Waterloo determined to get into
-                        Combinatorics and Optimization to study cryptography. Since the computer science
-                        department is within the Math Faculty at Waterloo, all first year students are
-                        required to complete two computer science courses. Not going to lie, those
-                        courses were tough and I’m not certain that I would have continued in computer
-                        science if I hadn’t had a wonderfully supportive group of friends (both in CS
-                        and outside). Although I originally thought I would prefer to work on my own, I
-                        found I really thrived on the cooperative projects we did for class. Once I had
-                        completed those required courses, I knew I wanted to do more.  Computer science
-                        provides me with that spectacular combination of theory and application. When I
-                        found out that I could combine my love of math and computer science, I was
-                        ecstatic. So here I am! I just started my second term of second year and I have
-                        never been more excited and motivated.</p>                 
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <!-- <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Our Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Resume</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
                         </div>
-                    </div>         
-            </div>     
-    </section>
-
-    <!-- Projects Section -->
-    <section id="services" class="services-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Projects</h1>
-                       <div class="">
-	                    <h3>What Privilege</h3>
-	                    <p>Built using Django at DeltaHacks 2014, this web app gives the user an introduction to the concept of privilege. 
-	                    </p>
-	                    <a href="http://www.whatprivilege.me">Click here to find out more.</a>
-	                </div>
-	                <div>
-	                    <h3>Women in Computer Science Undergraduate Committee</h3>
-	                    <p> The Women in Computer Science (WiCS) undergraduate committee at the University of Waterloo is a student-run initiavitve that supports the success of women in computer science.
-	                    </p>
-	                    <a href="http://wics.uwaterloo.ca">Click here to find out more.</a>
-	                <div>
-                </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>GitHub</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>LinkedIn</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- /.row (nested) -->
+                <!-- </div> -->
+                <!-- /.col-lg-10 -->
             </div>
-        </div>
-    </section>
+            <!-- /.row -->
+        <!-- </div> -->
+        <!-- /.container -->
+    <!-- </section> -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Blog</h1>
-                    <p>Coming Soon!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Callout -->
+
+    <!-- Portfolio -->
+
+    <!-- Footer -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -192,9 +225,37 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
 </body>
 
