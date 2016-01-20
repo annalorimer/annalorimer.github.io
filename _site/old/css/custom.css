@@ -1,0 +1,66 @@
+.pad-bottom {
+	padding-bottom: 20px;
+}
+
+.header-background {
+	background-image: url("../taipei_in_fog_name.png");
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.about-background {
+	background-color: #FAC441;
+	background-image: url("../instagram_background.png");
+}
+
+.projects-background {
+	background-color: #4B5169;
+}
+
+.permanent-marker {
+	font-family: 'Permanent Marker', cursive;
+}
+.vollkorn {
+	font-family: 'Vollkorn', serif;
+}
+
+.anna-lorimer {
+	background-image: url("../transparentannalorimer.png");
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.black-text {
+	color: black;
+}
+
+.white-text {
+	color: #F6F9FA;
+}
+
+.grey-background {
+	background-color: #DBD2D1;
+	border-radius: 15px;
+}
+
+ .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  a:active, a:link, a:visited {
+  	color: black;
+  }
+
+  .white-background {
+  	background-color: white;
+  	border-radius: 10px;
+  }
+
+  .item:hover a p.new-label:after{
+  content: 'ADD';
+}
