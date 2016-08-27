@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Anna}{Lorimer}{ \urlstyle{same}\url{www.annalorimer.com} \\
+\href{mailto:anna.lorimer@uwaterloo.ca}{anna.lorimer@uwaterloo.ca} | Waterloo, ON
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Waterloo}
+\descript{Joint Honours \\ Computer Science and \\ Combinatorics \& Optimization}
+\location{Expected Sept 2018 | Waterloo, ON}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Profficient}
+TypeScript \textbullet{} C \textbullet{} C++ \textbullet{} PHP \\
+Git \textbullet{} Unix Command Line \textbullet{} JQuery \\
+.NET 4.5 \textbullet{} AngularJS\ \textbullet{} HTML/CSS\\
+\location{Experienced}
+C\# \textbullet{} JavaScript \textbullet{} MIPS Assembly \\
+Bash Scripting \textbullet{} MySQL \\
+\location{Familiar:}
+Linux \textbullet{} Pelican \textbullet{} Django
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\location{In progress}
+Data Structures \& Data Management \\
+Foundations of Sequential Programs \\
+Elementary Algorithm Design  \\ \quad \& Data Abstraction \\
+Functional Programming \\
+Logic \& Computation \\
+Digital Hardware \\
+\sectionsep
+
+\location{In progress}
+Operating Systems \\
+Algorithms \\
+Network Flow Theory \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/annalorimer}{\custombold{annalorimer}} \\
+LinkedIn.ca://  \href{https://ca.linkedin.com/in/annalorimer}{\custombold{/in/annalorimer}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{IBI Intelligent Systems Engineering}
+\descript{| \\ Junior Software Engineer, Traffic Management Team }
+\location{May 2016 – Aug 2016 | Toronto, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed multi-threaded software to schedule and distribute work across multiple servers
+\item Used the C\# Task Parallel Library and the Async/Await pattern
+\item Implemented the publish/subscribe pattern over an enterprise bus to collect data from microwave radar detectors
+\item Created net new AngularJS web application with TypeScript
+\item Used MV* pattern to create views, controllers, services, models and directives
+\item Mocked restful backend API using Angular Mocks
+\item Integrated mapping with OpenLayers v3
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Audiobooks.com}
+\descript{| Software Developer }
+\location{Sept 2015 – Dec 2015 | Burlington, ON}
+\begin{tightemize}
+\item Implemented new features for the Audiobooks.com web application
+\item Pushed production code written in PHP, JavaScript and JQuery
+\item Optimized extraction from a MySQL database
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Dejero Inc.}
+\descript{| Software Quality Assurance Tester}
+\location{Jan 2015 – Apr 2015 | Waterloo, ON}
+\begin{tightemize}
+\item Project lead for NewsBook Mac (OSX Application) testing
+\item Tested Windows Embedded, iOS, OSX and Web Applications
+\item Performed system, unit, regression, load and function tests
+\item Isolated complex software and hardware bugs
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Women in Computer Science Undergraduate Committee}
+\descript{ | Secretary, Office Manager}
+\location{Jan 2015 – Dec 2016 | Waterloo, ON}
+\begin{tightemize}
+\item Managed a team of 9 people to run weekly academic and social events
+\item Supported a community of woman-identifying students at the University of Waterloo
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+
+\runsubsection{WLP4 Compiler}
+\descript{}
+\begin{tightemize}
+\item Implemented lexical, syntactic and semantic analysis as well as binary code generation using C++
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ WiCS Website }
+\descript{}
+\begin{tightemize}
+\item Regularily contributed to the WiCS website, an open-source project using Git, Pelican and Markdown
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ Building Buyer 7000 }
+\descript{}
+\begin{tightemize}
+\item Unix terminal Monopoly-esque game
+\item Implemented in C++ using Decorator, Singleton and Factory patterns
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\begin{tabular}{rll}
+2016	     & Women in Computer Science Grace Hopper Scholarship\\
+2015	     & Shortlisted fro Square College Code Camp\\
+2013	     & University of Waterloo President's Scholarship\\
+
+\end{tabular}
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
